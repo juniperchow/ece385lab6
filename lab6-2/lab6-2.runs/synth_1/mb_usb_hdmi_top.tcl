@@ -160,6 +160,8 @@ set_property used_in_implementation false [get_files /home/juniper/Nextcloud/uof
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

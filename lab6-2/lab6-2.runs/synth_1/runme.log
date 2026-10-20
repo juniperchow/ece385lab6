@@ -12,19 +12,24 @@ source mb_usb_hdmi_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/RD_hdmi_ip2020'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top mb_usb_hdmi_top -part xc7s50csga324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32427
+INFO: [Synth 8-7075] Helper process launched with PID 336820
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1957.250 ; gain = 372.770 ; free physical = 13099 ; free virtual = 25052
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2937.414; parent = 1963.191; children = 974.223
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1955.832 ; gain = 370.770 ; free physical = 7916 ; free virtual = 19840
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2938.828; parent = 1962.773; children = 976.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'hex_driver' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
@@ -38,22 +43,22 @@ INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [/home/juniper/Nextclou
 INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
 INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'mb_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:937]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_uartlite_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_uartlite_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_clk_wiz_1_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_clk_wiz_1_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_int_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_int_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_gpio_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_gpio_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_rst_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_rst_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_mdm_1_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_mdm_1_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_intc_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_intc_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_uartlite_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_uartlite_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_clk_wiz_1_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_clk_wiz_1_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_int_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_int_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_gpio_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_gpio_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_rst_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_rst_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_mdm_1_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_mdm_1_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_intc_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_intc_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_periph_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1616]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CNVJ1L' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CNVJ1L' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
@@ -71,27 +76,27 @@ INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1Y6O2J1' [/home/junip
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1Y6O2J1' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:804]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16FJ1YW' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2940]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16FJ1YW' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2940]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_xbar_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xbar_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_xbar_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xbar_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2665]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2665]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_usb_xbar_0' has 40 connections declared, but only 38 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2665]
 INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_periph_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1616]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_4XV58R' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2706]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_v10_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_v10_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_v10_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_v10_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2852]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_usb_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2852]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_v10_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_v10_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_v10_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_v10_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2898]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_usb_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2898]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_lmb_bram_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_lmb_bram_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_lmb_bram_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_lmb_bram_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2923]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2923]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_usb_lmb_bram_0' has 16 connections declared, but only 14 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2923]
@@ -100,21 +105,21 @@ INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_xlconcat_0' [/home
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_xlconcat_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_xlconcat_0/synth/mb_usb_microblaze_0_xlconcat_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1552]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1552]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_usb_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1552]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_spi_usb_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_spi_usb_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_spi_usb_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_spi_usb_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_spi_usb_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_spi_usb_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_spi_usb_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_spi_usb_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
 WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
 WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
 WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_usb_spi_usb_0' has 33 connections declared, but only 28 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1561]
-INFO: [Synth 8-6157] synthesizing module 'mb_usb_timer_usb_axi_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_usb_timer_usb_axi_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_timer_usb_axi_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_timer_usb_axi_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1590]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1590]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1590]
@@ -123,14 +128,14 @@ INFO: [Synth 8-6155] done synthesizing module 'mb_usb' (0#1) [/home/juniper/Next
 WARNING: [Synth 8-7071] port 'gpio_usb_int_tri_o' of module 'mb_usb' is unconnected for instance 'mb_block_i' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:72]
 WARNING: [Synth 8-7071] port 'gpio_usb_int_tri_t' of module 'mb_usb' is unconnected for instance 'mb_block_i' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:72]
 WARNING: [Synth 8-7023] instance 'mb_block_i' of module 'mb_usb' has 14 connections declared, but only 12 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:72]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:97]
 WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:97]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-32404-juniper-ThinkPad-T14-Gen-5/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/.Xil/Vivado-336798-juniper-ThinkPad-T14-Gen-5/realtime/hdmi_tx_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'ball' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/ball.sv:18]
 INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/ball.sv:18]
 INFO: [Synth 8-6157] synthesizing module 'color_mapper' [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
@@ -238,24 +243,24 @@ WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2034.156 ; gain = 449.676 ; free physical = 13091 ; free virtual = 25045
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3008.383; parent = 2034.160; children = 974.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2035.738 ; gain = 450.676 ; free physical = 7939 ; free virtual = 19863
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3011.797; parent = 2035.742; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2051.969 ; gain = 467.488 ; free physical = 13091 ; free virtual = 25045
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3026.195; parent = 2051.973; children = 974.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2053.551 ; gain = 468.488 ; free physical = 7941 ; free virtual = 19865
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3029.609; parent = 2053.555; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2051.969 ; gain = 467.488 ; free physical = 13091 ; free virtual = 25045
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3026.195; parent = 2051.973; children = 974.223
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2053.551 ; gain = 468.488 ; free physical = 7941 ; free virtual = 19865
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3029.609; parent = 2053.555; children = 976.055
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2051.969 ; gain = 0.000 ; free physical = 13091 ; free virtual = 25045
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2053.551 ; gain = 0.000 ; free physical = 7933 ; free virtual = 19858
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -311,27 +316,29 @@ Parsing XDC File [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.ru
 Finished Parsing XDC File [/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.719 ; gain = 0.000 ; free physical = 13103 ; free virtual = 25061
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.332 ; gain = 0.000 ; free physical = 7895 ; free virtual = 19820
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.719 ; gain = 0.000 ; free physical = 13103 ; free virtual = 25061
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.332 ; gain = 0.000 ; free physical = 7895 ; free virtual = 19820
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/run/media/juniper/4aa61f5c-6186-4592-8ac6-f0b4ecfcc986/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13282 ; free virtual = 25240
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7928 ; free virtual = 19854
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13282 ; free virtual = 25240
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7928 ; free virtual = 19854
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -377,14 +384,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_keycode. (con
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13281 ; free virtual = 25239
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7935 ; free virtual = 19862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13251 ; free virtual = 25211
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7939 ; free virtual = 19867
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -394,14 +401,15 @@ Detailed RTL Component Info :
 	   3 Input   32 Bit       Adders := 2     
 	   2 Input   32 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 8     
 +---Registers : 
 	               10 Bit    Registers := 6     
 	                1 Bit    Registers := 2     
 +---Multipliers : 
 	              32x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input   10 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 10    
+	   5 Input   10 Bit        Muxes := 3     
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
 	   5 Input    4 Bit        Muxes := 2     
@@ -449,9 +457,9 @@ DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red
 WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 1
 WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13249 ; free virtual = 25213
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1388.975; parent = 1183.404; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7901 ; free virtual = 19835
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1386.167; parent = 1182.336; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -480,25 +488,25 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'Clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13148 ; free virtual = 25112
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1523.879; parent = 1318.371; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7708 ; free virtual = 19644
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1519.837; parent = 1316.068; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13132 ; free virtual = 25097
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.238; parent = 1323.730; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7734 ; free virtual = 19669
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1528.845; parent = 1325.076; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 13132 ; free virtual = 25097
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.133; parent = 1324.625; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7733 ; free virtual = 19669
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1528.845; parent = 1325.076; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -516,49 +524,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12365 ; free virtual = 24450
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.375; parent = 1324.870; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7489 ; free virtual = 19457
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1528.935; parent = 1325.166; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12365 ; free virtual = 24450
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.391; parent = 1324.886; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7458 ; free virtual = 19425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1528.935; parent = 1325.166; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12365 ; free virtual = 24450
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.473; parent = 1324.968; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7458 ; free virtual = 19425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.017; parent = 1325.248; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12365 ; free virtual = 24450
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.535; parent = 1325.030; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7463 ; free virtual = 19430
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.079; parent = 1325.311; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12373 ; free virtual = 24458
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.535; parent = 1325.030; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7460 ; free virtual = 19427
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.079; parent = 1325.311; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12373 ; free virtual = 24458
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.535; parent = 1325.030; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7448 ; free virtual = 19415
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.079; parent = 1325.311; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -625,44 +633,46 @@ Report Cell Usage:
 |17    |mb_usb_spi_usb               |     1|
 |18    |mb_usb_timer_usb_axi         |     1|
 |19    |mb_usb_xbar                  |     1|
-|20    |CARRY4                       |    31|
-|21    |DSP48E1                      |     6|
-|22    |LUT1                         |    17|
-|23    |LUT2                         |    92|
-|24    |LUT3                         |    11|
-|25    |LUT4                         |    19|
-|26    |LUT5                         |    57|
-|27    |LUT6                         |    18|
-|28    |FDCE                         |    22|
-|29    |FDRE                         |    17|
-|30    |IBUF                         |     4|
-|31    |OBUF                         |    29|
+|20    |BUFG                         |     1|
+|21    |CARRY4                       |    37|
+|22    |DSP48E1                      |     6|
+|23    |LUT1                         |     3|
+|24    |LUT2                         |   111|
+|25    |LUT3                         |    10|
+|26    |LUT4                         |    37|
+|27    |LUT5                         |    46|
+|28    |LUT6                         |    82|
+|29    |FDCE                         |    22|
+|30    |FDRE                         |    50|
+|31    |FDSE                         |     7|
+|32    |IBUF                         |     4|
+|33    |OBUF                         |    29|
 +------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12373 ; free virtual = 24458
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1530.598; parent = 1325.093; children = 205.570
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3154.930; parent = 2180.707; children = 974.223
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7448 ; free virtual = 19415
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1529.126; parent = 1325.357; children = 203.831
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3155.375; parent = 2179.320; children = 976.055
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2212.719 ; gain = 467.488 ; free physical = 12402 ; free virtual = 24488
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.719 ; gain = 628.238 ; free physical = 12403 ; free virtual = 24488
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.332 ; gain = 468.488 ; free physical = 7436 ; free virtual = 19403
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2211.332 ; gain = 626.270 ; free physical = 7436 ; free virtual = 19403
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2212.719 ; gain = 0.000 ; free physical = 12434 ; free virtual = 24519
-INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2211.332 ; gain = 0.000 ; free physical = 7486 ; free virtual = 19452
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.719 ; gain = 0.000 ; free physical = 12403 ; free virtual = 24489
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.332 ; gain = 0.000 ; free physical = 7578 ; free virtual = 19543
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: eb09d618
+Synth Design complete, checksum: 5e1e68cb
 INFO: [Common 17-83] Releasing license: Synthesis
-104 Infos, 135 Warnings, 1 Critical Warnings and 0 Errors encountered.
+110 Infos, 135 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2212.719 ; gain = 937.270 ; free physical = 12610 ; free virtual = 24695
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2211.332 ; gain = 894.332 ; free physical = 7750 ; free virtual = 19716
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 12:08:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 13:17:05 2026...

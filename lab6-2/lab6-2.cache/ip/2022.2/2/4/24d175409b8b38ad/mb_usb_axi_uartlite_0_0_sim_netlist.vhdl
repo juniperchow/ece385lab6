@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Tue Oct 20 11:50:11 2026
+-- Date        : Tue Oct 20 13:01:04 2026
 -- Host        : juniper-ThinkPad-T14-Gen-5 running 64-bit Ubuntu 26.10
--- Command     : write_vhdl -force -mode funcsim
---               /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ mb_usb_axi_uartlite_0_0_sim_netlist.vhdl
 -- Design      : mb_usb_axi_uartlite_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,218 +14,116 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_baudrate is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_baudrate is
   port (
     en_16x_Baud : out STD_LOGIC;
     EN_16x_Baud_reg_0 : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_baudrate : entity is "baudrate";
-end mb_usb_axi_uartlite_0_0_baudrate;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_baudrate;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_baudrate is
-  signal \^en_16x_baud\ : STD_LOGIC;
-  signal count : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal \count[2]_i_2_n_0\ : STD_LOGIC;
-  signal \count[4]_i_2_n_0\ : STD_LOGIC;
-  signal \count[4]_i_3_n_0\ : STD_LOGIC;
-  signal \count[9]_i_2_n_0\ : STD_LOGIC;
-  signal count_0 : STD_LOGIC_VECTOR ( 9 downto 0 );
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_baudrate is
+  signal count : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal \count[0]_i_1_n_0\ : STD_LOGIC;
+  signal \count[1]_i_1_n_0\ : STD_LOGIC;
+  signal \count[2]_i_1_n_0\ : STD_LOGIC;
+  signal \count[3]_i_1_n_0\ : STD_LOGIC;
+  signal \count[4]_i_1_n_0\ : STD_LOGIC;
+  signal \count[5]_i_1_n_0\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \count[2]_i_2\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \count[3]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \count[4]_i_2\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \count[4]_i_3\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \count[9]_i_2\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \count[4]_i_1\ : label is "soft_lutpair10";
 begin
-EN_16x_Baud_i_1: unisim.vcomponents.LUT6
+en_16x_baud_RnM: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000001"
     )
         port map (
-      I0 => \count[9]_i_2_n_0\,
-      I1 => count(5),
-      I2 => count(6),
-      I3 => count(9),
-      I4 => count(7),
-      I5 => count(8),
-      O => \^en_16x_baud\
+      I0 => count(4),
+      I1 => count(3),
+      I2 => count(5),
+      I3 => count(0),
+      I4 => count(1),
+      I5 => count(2),
+      O => p_0_in
     );
 EN_16x_Baud_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \^en_16x_baud\,
+      D => p_0_in,
       Q => en_16x_Baud,
       R => EN_16x_Baud_reg_0
     );
-\count[0]_i_1\: unisim.vcomponents.LUT6
+\count[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"0000FFFF0000FFFE"
+      INIT => X"1"
     )
         port map (
-      I0 => count(3),
-      I1 => count(4),
-      I2 => \count[2]_i_2_n_0\,
-      I3 => count(2),
-      I4 => count(0),
-      I5 => count(1),
-      O => count_0(0)
+      I0 => count(0),
+      O => \count[0]_i_1_n_0\
     );
-\count[1]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
-    )
-        port map (
-      I0 => count(1),
-      I1 => count(0),
-      O => count_0(1)
-    );
-\count[2]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"E1E1E1E1E1E1E1E0"
-    )
-        port map (
-      I0 => count(1),
-      I1 => count(0),
-      I2 => count(2),
-      I3 => \count[2]_i_2_n_0\,
-      I4 => count(4),
-      I5 => count(3),
-      O => count_0(2)
-    );
-\count[2]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => count(9),
-      I1 => count(7),
-      I2 => count(8),
-      I3 => count(6),
-      I4 => count(5),
-      O => \count[2]_i_2_n_0\
-    );
-\count[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"AAA9"
-    )
-        port map (
-      I0 => count(3),
-      I1 => count(1),
-      I2 => count(0),
-      I3 => count(2),
-      O => count_0(3)
-    );
-\count[4]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"A9A9A9A9A9A9A9A8"
-    )
-        port map (
-      I0 => count(4),
-      I1 => count(3),
-      I2 => \count[4]_i_2_n_0\,
-      I3 => \count[4]_i_3_n_0\,
-      I4 => count(6),
-      I5 => count(5),
-      O => count_0(4)
-    );
-\count[4]_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"FE"
-    )
-        port map (
-      I0 => count(1),
-      I1 => count(0),
-      I2 => count(2),
-      O => \count[4]_i_2_n_0\
-    );
-\count[4]_i_3\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"FE"
-    )
-        port map (
-      I0 => count(8),
-      I1 => count(7),
-      I2 => count(9),
-      O => \count[4]_i_3_n_0\
-    );
-\count[5]_i_1\: unisim.vcomponents.LUT6
+\count[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFF00000000FFFE"
     )
         port map (
-      I0 => count(9),
-      I1 => count(7),
-      I2 => count(8),
-      I3 => count(6),
-      I4 => count(5),
-      I5 => \count[9]_i_2_n_0\,
-      O => count_0(5)
+      I0 => count(2),
+      I1 => count(3),
+      I2 => count(4),
+      I3 => count(5),
+      I4 => count(1),
+      I5 => count(0),
+      O => \count[1]_i_1_n_0\
     );
-\count[6]_i_1\: unisim.vcomponents.LUT6
+\count[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"A9A9A9A9A9A9A9A8"
+      INIT => X"A9"
     )
         port map (
-      I0 => count(6),
-      I1 => count(5),
-      I2 => \count[9]_i_2_n_0\,
-      I3 => count(8),
-      I4 => count(7),
-      I5 => count(9),
-      O => count_0(6)
+      I0 => count(2),
+      I1 => count(1),
+      I2 => count(0),
+      O => \count[2]_i_1_n_0\
     );
-\count[7]_i_1\: unisim.vcomponents.LUT4
+\count[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AAA9"
-    )
-        port map (
-      I0 => count(7),
-      I1 => count(6),
-      I2 => count(5),
-      I3 => \count[9]_i_2_n_0\,
-      O => count_0(7)
-    );
-\count[8]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FF00FE01FF00FE00"
-    )
-        port map (
-      I0 => \count[9]_i_2_n_0\,
-      I1 => count(5),
-      I2 => count(6),
-      I3 => count(8),
-      I4 => count(7),
-      I5 => count(9),
-      O => count_0(8)
-    );
-\count[9]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"F0F0F0F0F0F0F0E1"
-    )
-        port map (
-      I0 => count(8),
-      I1 => count(7),
-      I2 => count(9),
-      I3 => count(6),
-      I4 => count(5),
-      I5 => \count[9]_i_2_n_0\,
-      O => count_0(9)
-    );
-\count[9]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
+      INIT => X"F0F0F0F0F0F0F00E"
     )
         port map (
       I0 => count(4),
-      I1 => count(3),
-      I2 => count(2),
-      I3 => count(0),
+      I1 => count(5),
+      I2 => count(3),
+      I3 => count(2),
       I4 => count(1),
-      O => \count[9]_i_2_n_0\
+      I5 => count(0),
+      O => \count[3]_i_1_n_0\
+    );
+\count[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFE0001"
+    )
+        port map (
+      I0 => count(2),
+      I1 => count(3),
+      I2 => count(1),
+      I3 => count(0),
+      I4 => count(4),
+      O => \count[4]_i_1_n_0\
+    );
+\count[5]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFE00000001"
+    )
+        port map (
+      I0 => count(2),
+      I1 => count(3),
+      I2 => count(1),
+      I3 => count(0),
+      I4 => count(4),
+      I5 => count(5),
+      O => \count[5]_i_1_n_0\
     );
 \count_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -234,7 +132,7 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(0),
+      D => \count[0]_i_1_n_0\,
       Q => count(0),
       R => EN_16x_Baud_reg_0
     );
@@ -245,7 +143,7 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(1),
+      D => \count[1]_i_1_n_0\,
       Q => count(1),
       R => EN_16x_Baud_reg_0
     );
@@ -256,7 +154,7 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(2),
+      D => \count[2]_i_1_n_0\,
       Q => count(2),
       R => EN_16x_Baud_reg_0
     );
@@ -267,7 +165,7 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(3),
+      D => \count[3]_i_1_n_0\,
       Q => count(3),
       R => EN_16x_Baud_reg_0
     );
@@ -278,7 +176,7 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(4),
+      D => \count[4]_i_1_n_0\,
       Q => count(4),
       R => EN_16x_Baud_reg_0
     );
@@ -289,52 +187,8 @@ EN_16x_Baud_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => count_0(5),
+      D => \count[5]_i_1_n_0\,
       Q => count(5),
-      R => EN_16x_Baud_reg_0
-    );
-\count_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => count_0(6),
-      Q => count(6),
-      R => EN_16x_Baud_reg_0
-    );
-\count_reg[7]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => count_0(7),
-      Q => count(7),
-      R => EN_16x_Baud_reg_0
-    );
-\count_reg[8]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => count_0(8),
-      Q => count(8),
-      R => EN_16x_Baud_reg_0
-    );
-\count_reg[9]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => count_0(9),
-      Q => count(9),
       R => EN_16x_Baud_reg_0
     );
 end STRUCTURE;
@@ -342,7 +196,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_cdc_sync is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync is
   port (
     \status_reg_reg[1]\ : out STD_LOGIC;
     scndry_out : out STD_LOGIC;
@@ -361,11 +215,9 @@ entity mb_usb_axi_uartlite_0_0_cdc_sync is
     rx : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_cdc_sync : entity is "cdc_sync";
-end mb_usb_axi_uartlite_0_0_cdc_sync;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_cdc_sync is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync is
   signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\ : STD_LOGIC;
   signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\ : STD_LOGIC;
   signal Q : STD_LOGIC;
@@ -392,8 +244,8 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_cdc_sync is
   attribute XILINX_TRANSFORM_PINMAP of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "VCC:CE";
   attribute box_type of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "PRIMITIVE";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of frame_err_ocrd_i_1 : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \status_reg[1]_i_2\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of frame_err_ocrd_i_1 : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \status_reg[1]_i_2\ : label is "soft_lutpair11";
 begin
   scndry_out <= \^scndry_out\;
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\: unisim.vcomponents.FDRE
@@ -503,7 +355,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -526,11 +378,9 @@ entity mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f is
     s_axi_aresetn : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f : entity is "cntr_incr_decr_addn_f";
-end mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
   signal FIFO_Full_i_2_n_0 : STD_LOGIC;
   signal FIFO_Full_i_3_n_0 : STD_LOGIC;
   signal \INFERRED_GEN.cnt_i[3]_i_2__0_n_0\ : STD_LOGIC;
@@ -539,8 +389,8 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f is
   signal \^ss\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \INFERRED_GEN.cnt_i[3]_i_2__0\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of tx_Start_i_1 : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \INFERRED_GEN.cnt_i[3]_i_2__0\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of tx_Start_i_1 : label is "soft_lutpair16";
 begin
   Q(4 downto 0) <= \^q\(4 downto 0);
   SS(0) <= \^ss\(0);
@@ -747,7 +597,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -764,10 +614,10 @@ entity mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2 is
     s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2 : entity is "cntr_incr_decr_addn_f";
-end mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2 is
   signal \FIFO_Full_i_2__0_n_0\ : STD_LOGIC;
   signal \INFERRED_GEN.cnt_i[4]_i_3__0_n_0\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -932,7 +782,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_dynshreg_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f is
   port (
     mux_Out : out STD_LOGIC;
     serial_Data_reg : in STD_LOGIC;
@@ -943,11 +793,9 @@ entity mb_usb_axi_uartlite_0_0_dynshreg_f is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_dynshreg_f : entity is "dynshreg_f";
-end mb_usb_axi_uartlite_0_0_dynshreg_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_dynshreg_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f is
   signal fifo_DOut : STD_LOGIC_VECTOR ( 0 to 7 );
   signal mux_0123 : STD_LOGIC;
   signal mux_4567 : STD_LOGIC;
@@ -1120,7 +968,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_dynshreg_f_3 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3 is
   port (
     fifo_wr : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -1132,10 +980,10 @@ entity mb_usb_axi_uartlite_0_0_dynshreg_f_3 is
     s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_dynshreg_f_3 : entity is "dynshreg_f";
-end mb_usb_axi_uartlite_0_0_dynshreg_f_3;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3 : entity is "dynshreg_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_dynshreg_f_3 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3 is
   signal \^fifo_wr\ : STD_LOGIC;
   attribute srl_bus_name : string;
   attribute srl_bus_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
@@ -1284,17 +1132,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_pselect_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f is
   port (
     ce_expnd_i_3 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_pselect_f : entity is "pselect_f";
-end mb_usb_axi_uartlite_0_0_pselect_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_pselect_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f is
 begin
 CS: unisim.vcomponents.LUT2
     generic map(
@@ -1310,17 +1156,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \mb_usb_axi_uartlite_0_0_pselect_f__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\ is
   port (
     ce_expnd_i_1 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \mb_usb_axi_uartlite_0_0_pselect_f__parameterized1\ : entity is "pselect_f";
-end \mb_usb_axi_uartlite_0_0_pselect_f__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\ : entity is "pselect_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\;
 
-architecture STRUCTURE of \mb_usb_axi_uartlite_0_0_pselect_f__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\ is
 begin
 CS: unisim.vcomponents.LUT2
     generic map(
@@ -1336,7 +1182,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_address_decoder is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
   port (
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_0\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : out STD_LOGIC;
@@ -1382,11 +1228,9 @@ entity mb_usb_axi_uartlite_0_0_address_decoder is
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_address_decoder : entity is "address_decoder";
-end mb_usb_axi_uartlite_0_0_address_decoder;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_address_decoder is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
   signal Bus_RNW_reg_i_1_n_0 : STD_LOGIC;
   signal \^bus_rnw_reg_reg_0\ : STD_LOGIC;
   signal \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\ : STD_LOGIC;
@@ -1562,13 +1406,13 @@ Bus_RNW_reg_reg: unisim.vcomponents.FDRE
       I2 => tx_Buffer_Full,
       O => fifo_wr
     );
-\MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.mb_usb_axi_uartlite_0_0_pselect_f
+\MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f
      port map (
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
       ce_expnd_i_3 => ce_expnd_i_3
     );
-\MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.\mb_usb_axi_uartlite_0_0_pselect_f__parameterized1\
+\MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\
      port map (
       \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
       \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
@@ -1812,7 +1656,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1838,11 +1682,9 @@ entity mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f is
     s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f : entity is "srl_fifo_rbu_f";
-end mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
@@ -1852,7 +1694,7 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f is
   signal fifo_full_p1 : STD_LOGIC;
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
@@ -1879,7 +1721,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn
       tx_Start => tx_Start,
       tx_Start_reg => tx_Start_reg
     );
-DYNSHREG_F_I: entity work.mb_usb_axi_uartlite_0_0_dynshreg_f
+DYNSHREG_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f
      port map (
       Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_2,
       Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_3,
@@ -1906,7 +1748,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     \status_reg_reg[2]\ : out STD_LOGIC;
@@ -1925,10 +1767,10 @@ entity mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1 is
     \in\ : in STD_LOGIC_VECTOR ( 0 to 7 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1 : entity is "srl_fifo_rbu_f";
-end mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 : entity is "srl_fifo_rbu_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
@@ -1939,7 +1781,7 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1 is
   signal fifo_wr : STD_LOGIC;
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn_f_2
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => FIFO_Full_reg_1,
@@ -1959,7 +1801,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.mb_usb_axi_uartlite_0_0_cntr_incr_decr_addn
       s_axi_aresetn => s_axi_aresetn,
       valid_rx => valid_rx
     );
-DYNSHREG_F_I: entity work.mb_usb_axi_uartlite_0_0_dynshreg_f_3
+DYNSHREG_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3
      port map (
       \INFERRED_GEN.cnt_i_reg[3]\ => \^fifo_full_reg_0\,
       Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_2,
@@ -1998,7 +1840,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_slave_attachment is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attachment is
   port (
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : out STD_LOGIC;
@@ -2037,11 +1879,9 @@ entity mb_usb_axi_uartlite_0_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_slave_attachment : entity is "slave_attachment";
-end mb_usb_axi_uartlite_0_0_slave_attachment;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attachment;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_slave_attachment is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attachment is
   signal \FSM_onehot_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[1]\ : STD_LOGIC;
@@ -2151,7 +1991,7 @@ begin
       Q => s_axi_rresp_i,
       R => rst
     );
-I_DECODER: entity work.mb_usb_axi_uartlite_0_0_address_decoder
+I_DECODER: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder
      port map (
       Bus_RNW_reg_reg_0 => Bus_RNW_reg_reg,
       Bus_RNW_reg_reg_1 => Bus_RNW_reg_reg_0,
@@ -2459,7 +2299,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_srl_fifo_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2485,13 +2325,11 @@ entity mb_usb_axi_uartlite_0_0_srl_fifo_f is
     s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_srl_fifo_f : entity is "srl_fifo_f";
-end mb_usb_axi_uartlite_0_0_srl_fifo_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
 begin
-I_SRL_FIFO_RBU_F: entity work.mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f
+I_SRL_FIFO_RBU_F: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg_0 => FIFO_Full_reg,
@@ -2522,7 +2360,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_srl_fifo_f_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0 is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     \status_reg_reg[2]\ : out STD_LOGIC;
@@ -2541,12 +2379,12 @@ entity mb_usb_axi_uartlite_0_0_srl_fifo_f_0 is
     \in\ : in STD_LOGIC_VECTOR ( 0 to 7 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_srl_fifo_f_0 : entity is "srl_fifo_f";
-end mb_usb_axi_uartlite_0_0_srl_fifo_f_0;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0 : entity is "srl_fifo_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_srl_fifo_f_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0 is
 begin
-I_SRL_FIFO_RBU_F: entity work.mb_usb_axi_uartlite_0_0_srl_fifo_rbu_f_1
+I_SRL_FIFO_RBU_F: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg_0 => FIFO_Full_reg,
@@ -2569,7 +2407,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_axi_lite_ipif is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif is
   port (
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : out STD_LOGIC;
@@ -2608,13 +2446,11 @@ entity mb_usb_axi_uartlite_0_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
-end mb_usb_axi_uartlite_0_0_axi_lite_ipif;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_axi_lite_ipif is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif is
 begin
-I_SLAVE_ATTACHMENT: entity work.mb_usb_axi_uartlite_0_0_slave_attachment
+I_SLAVE_ATTACHMENT: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attachment
      port map (
       Bus_RNW_reg_reg => Bus_RNW_reg,
       Bus_RNW_reg_reg_0 => Bus_RNW_reg_reg,
@@ -2658,7 +2494,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_uartlite_rx is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx is
   port (
     s_axi_aresetn_0 : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
@@ -2678,11 +2514,9 @@ entity mb_usb_axi_uartlite_0_0_uartlite_rx is
     \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
     rx : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_uartlite_rx : entity is "uartlite_rx";
-end mb_usb_axi_uartlite_0_0_uartlite_rx;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_rx is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx is
   signal INPUT_DOUBLE_REGS3_n_3 : STD_LOGIC;
   signal INPUT_DOUBLE_REGS3_n_4 : STD_LOGIC;
   signal RX_D2 : STD_LOGIC;
@@ -2732,22 +2566,22 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_rx is
   signal valid_rx : STD_LOGIC;
   signal valid_rx_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[2].fifo_din[2]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[3].fifo_din[3]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[4].fifo_din[4]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[5].fifo_din[5]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[6].fifo_din[6]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[7].fifo_din[7]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[2].fifo_din[2]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[3].fifo_din[3]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[4].fifo_din[4]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[5].fifo_din[5]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[6].fifo_din[6]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[7].fifo_din[7]_i_1\ : label is "soft_lutpair15";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg ";
   attribute srl_name : string;
   attribute srl_name of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12 ";
-  attribute SOFT_HLUTNM of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of valid_rx_i_1 : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of valid_rx_i_1 : label is "soft_lutpair12";
 begin
   data_shift_reg_r_12_0 <= \^data_shift_reg_r_12_0\;
   s_axi_aresetn_0 <= \^s_axi_aresetn_0\;
-INPUT_DOUBLE_REGS3: entity work.mb_usb_axi_uartlite_0_0_cdc_sync
+INPUT_DOUBLE_REGS3: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync
      port map (
       EN_16x_Baud_reg => INPUT_DOUBLE_REGS3_n_3,
       clr_Status => clr_Status,
@@ -2924,7 +2758,7 @@ Interrupt_i_1: unisim.vcomponents.LUT1
       Q => fifo_din(8),
       R => \SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0\
     );
-SRL_FIFO_I: entity work.mb_usb_axi_uartlite_0_0_srl_fifo_f_0
+SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => FIFO_Full_reg,
@@ -3293,7 +3127,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_uartlite_tx is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     tx : out STD_LOGIC;
@@ -3314,16 +3148,15 @@ entity mb_usb_axi_uartlite_0_0_uartlite_tx is
     s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_uartlite_tx : entity is "uartlite_tx";
-end mb_usb_axi_uartlite_0_0_uartlite_tx;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_tx is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx is
   signal SRL_FIFO_I_n_4 : STD_LOGIC;
   signal TX0 : STD_LOGIC;
   signal \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\ : STD_LOGIC;
   signal \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\ : STD_LOGIC;
   signal data_shift_reg_gate_n_0 : STD_LOGIC;
+  signal \data_shift_reg_n_0_[0]\ : STD_LOGIC;
   signal div16 : STD_LOGIC;
   signal fifo_Read : STD_LOGIC;
   signal fifo_Read0 : STD_LOGIC;
@@ -3333,7 +3166,6 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_tx is
   signal \mux_sel[2]_i_1_n_0\ : STD_LOGIC;
   signal \mux_sel_reg_n_0_[0]\ : STD_LOGIC;
   signal \mux_sel_reg_n_0_[2]\ : STD_LOGIC;
-  signal p_0_in : STD_LOGIC_VECTOR ( 1 to 1 );
   signal p_5_in : STD_LOGIC;
   signal serial_Data : STD_LOGIC;
   signal tx_DataBits : STD_LOGIC;
@@ -3346,10 +3178,10 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_tx is
   attribute srl_name : string;
   attribute srl_name of \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11 ";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \mux_sel[0]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \mux_sel[1]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \mux_sel[0]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \mux_sel[1]_i_1\ : label is "soft_lutpair17";
 begin
-SRL_FIFO_I: entity work.mb_usb_axi_uartlite_0_0_srl_fifo_f
+SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => FIFO_Full_reg,
@@ -3398,7 +3230,7 @@ TX_reg: unisim.vcomponents.FDSE
       C => s_axi_aclk,
       CE => en_16x_Baud,
       D => div16,
-      Q => p_0_in(1),
+      Q => \data_shift_reg_n_0_[0]\,
       S => \data_shift_reg[15]_0\
     );
 \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\: unisim.vcomponents.SRL16E
@@ -3409,7 +3241,7 @@ TX_reg: unisim.vcomponents.FDSE
       A3 => '1',
       CE => en_16x_Baud,
       CLK => s_axi_aclk,
-      D => p_0_in(1),
+      D => \data_shift_reg_n_0_[0]\,
       Q => \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\
     );
 \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\: unisim.vcomponents.FDRE
@@ -3574,7 +3406,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_uartlite_core is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core is
   port (
     bus2ip_reset : out STD_LOGIC;
     rx_Buffer_Full : out STD_LOGIC;
@@ -3602,11 +3434,9 @@ entity mb_usb_axi_uartlite_0_0_uartlite_core is
     rx : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_uartlite_core : entity is "uartlite_core";
-end mb_usb_axi_uartlite_0_0_uartlite_core;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_uartlite_core is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core is
   signal \^inferred_gen.cnt_i_reg[4]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Interrupt0 : STD_LOGIC;
   signal UARTLITE_RX_I_n_2 : STD_LOGIC;
@@ -3626,7 +3456,7 @@ begin
   bus2ip_reset <= \^bus2ip_reset\;
   enable_interrupts <= \^enable_interrupts\;
   status_reg(1 downto 0) <= \^status_reg\(1 downto 0);
-BAUD_RATE_I: entity work.mb_usb_axi_uartlite_0_0_baudrate
+BAUD_RATE_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_baudrate
      port map (
       EN_16x_Baud_reg_0 => \^bus2ip_reset\,
       en_16x_Baud => en_16x_Baud,
@@ -3640,7 +3470,7 @@ Interrupt_reg: unisim.vcomponents.FDRE
       Q => interrupt,
       R => \^bus2ip_reset\
     );
-UARTLITE_RX_I: entity work.mb_usb_axi_uartlite_0_0_uartlite_rx
+UARTLITE_RX_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => rx_Buffer_Full,
@@ -3660,7 +3490,7 @@ UARTLITE_RX_I: entity work.mb_usb_axi_uartlite_0_0_uartlite_rx
       \status_reg_reg[1]\ => UARTLITE_RX_I_n_3,
       \status_reg_reg[2]\ => UARTLITE_RX_I_n_4
     );
-UARTLITE_TX_I: entity work.mb_usb_axi_uartlite_0_0_uartlite_tx
+UARTLITE_TX_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => tx_Buffer_Full,
@@ -3756,7 +3586,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0_axi_uartlite is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -3782,28 +3612,26 @@ entity mb_usb_axi_uartlite_0_0_axi_uartlite is
     tx : out STD_LOGIC
   );
   attribute C_BAUDRATE : integer;
-  attribute C_BAUDRATE of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 9600;
+  attribute C_BAUDRATE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 115200;
   attribute C_DATA_BITS : integer;
-  attribute C_DATA_BITS of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 8;
+  attribute C_DATA_BITS of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 8;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is "spartan7";
+  attribute C_FAMILY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is "spartan7";
   attribute C_ODD_PARITY : integer;
-  attribute C_ODD_PARITY of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 0;
+  attribute C_ODD_PARITY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 0;
   attribute C_S_AXI_ACLK_FREQ_HZ : integer;
-  attribute C_S_AXI_ACLK_FREQ_HZ of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 100000000;
+  attribute C_S_AXI_ACLK_FREQ_HZ of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 100000000;
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 4;
+  attribute C_S_AXI_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 4;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 32;
+  attribute C_S_AXI_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 32;
   attribute C_USE_PARITY : integer;
-  attribute C_USE_PARITY of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is "axi_uartlite";
+  attribute C_USE_PARITY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 0;
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of mb_usb_axi_uartlite_0_0_axi_uartlite : entity is "yes";
-end mb_usb_axi_uartlite_0_0_axi_uartlite;
+  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is "yes";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0_axi_uartlite is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite is
   signal \<const0>\ : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_11 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_13 : STD_LOGIC;
@@ -3860,7 +3688,7 @@ begin
   s_axi_rresp(1) <= \^s_axi_rresp\(1);
   s_axi_rresp(0) <= \<const0>\;
   s_axi_wready <= \^s_axi_wready\;
-AXI_LITE_IPIF_I: entity work.mb_usb_axi_uartlite_0_0_axi_lite_ipif
+AXI_LITE_IPIF_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       Bus_RNW_reg_reg => AXI_LITE_IPIF_I_n_15,
@@ -3912,7 +3740,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-UARTLITE_CORE_I: entity work.mb_usb_axi_uartlite_0_0_uartlite_core
+UARTLITE_CORE_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       FIFO_Full_reg => AXI_LITE_IPIF_I_n_15,
@@ -3953,7 +3781,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mb_usb_axi_uartlite_0_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -3979,16 +3807,16 @@ entity mb_usb_axi_uartlite_0_0 is
     tx : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of mb_usb_axi_uartlite_0_0 : entity is true;
+  attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of mb_usb_axi_uartlite_0_0 : entity is "mb_usb_axi_uartlite_0_0,axi_uartlite,{}";
+  attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "mb_usb_axi_uartlite_0_0,axi_uartlite,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of mb_usb_axi_uartlite_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of mb_usb_axi_uartlite_0_0 : entity is "axi_uartlite,Vivado 2022.2";
-end mb_usb_axi_uartlite_0_0;
+  attribute x_core_info of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "axi_uartlite,Vivado 2022.2";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture STRUCTURE of mb_usb_axi_uartlite_0_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal \<const0>\ : STD_LOGIC;
   signal \^s_axi_bresp\ : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \^s_axi_rdata\ : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -3997,7 +3825,7 @@ architecture STRUCTURE of mb_usb_axi_uartlite_0_0 is
   signal NLW_U0_s_axi_rdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
   signal NLW_U0_s_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute C_BAUDRATE : integer;
-  attribute C_BAUDRATE of U0 : label is 9600;
+  attribute C_BAUDRATE of U0 : label is 115200;
   attribute C_DATA_BITS : integer;
   attribute C_DATA_BITS of U0 : label is 8;
   attribute C_FAMILY : string;
@@ -4076,7 +3904,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-U0: entity work.mb_usb_axi_uartlite_0_0_axi_uartlite
+U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite
      port map (
       interrupt => interrupt,
       rx => rx,

@@ -1316,7 +1316,12 @@
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "mb_usb_axi_uartlite_0_0",
         "xci_path": "ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.xci",
-        "inst_hier_path": "axi_uartlite_0"
+        "inst_hier_path": "axi_uartlite_0",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          }
+        }
       },
       "gpio_usb_rst": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",

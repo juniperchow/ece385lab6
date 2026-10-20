@@ -36,7 +36,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab6-2.gen/sources_1/bd/mb
 "../../../bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0_sim_netlist.v" \
 "../../../bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0_sim_netlist.v" \
 "../../../bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0_sim_netlist.v" \
-"../../../bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_sim_netlist.v" \
+"/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_sim_netlist.v" \
 "../../../bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_sim_netlist.v" \
 "../../../bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_sim_netlist.v" \
 "../../../bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0_sim_netlist.v" \

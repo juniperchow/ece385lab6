@@ -18,3 +18,12 @@ platform generate -domains
 platform active {mb_usb_hdmi_top}
 platform generate -quick
 platform generate
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform generate -domains 

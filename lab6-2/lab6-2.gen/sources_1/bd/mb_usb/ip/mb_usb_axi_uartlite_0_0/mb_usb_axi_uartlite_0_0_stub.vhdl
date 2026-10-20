@@ -1,7 +1,7 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Tue Oct 20 11:50:11 2026
+-- Date        : Tue Oct 20 13:01:04 2026
 -- Host        : juniper-ThinkPad-T14-Gen-5 running 64-bit Ubuntu 26.10
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_stub.vhdl

@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Tue Oct 20 12:07:44 2026
+//Date        : Tue Oct 20 13:00:23 2026
 //Host        : juniper-ThinkPad-T14-Gen-5 running 64-bit Ubuntu 26.10
 //Command     : generate_target mb_usb_wrapper.bd
 //Design      : mb_usb_wrapper
