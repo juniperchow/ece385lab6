@@ -28,34 +28,34 @@ static XGpio Gpio_int;
 static XSpi_Config *ConfigPtr;	/* Pointer to Configuration data */
 XTmrCtr Usb_timer;
 
-/* SPI mode 0, 8-bit standard SPI, polled transfers to slave select 0. */
-void SPI_init(void)
-{
-    static int initialized = 0;
-    if (initialized) {
-        Status = XSpi_Stop(&SpiInstance);
-        if (Status != XST_SUCCESS) {
-            xil_printf("SPI stop failed: %d\r\n", Status);
-            exit(EXIT_FAILURE);
-        }
-    }
-    ConfigPtr = XSpi_LookupConfig(XPAR_SPI_USB_DEVICE_ID);
-    if (ConfigPtr == NULL) {
-        xil_printf("SPI configuration not found\r\n");
-        exit(EXIT_FAILURE);
-    }
-    Status = XSpi_CfgInitialize(&SpiInstance, ConfigPtr, ConfigPtr->BaseAddress);
-    if (Status == XST_SUCCESS)
-        Status = XSpi_SetOptions(&SpiInstance,
-                    XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
-    if (Status == XST_SUCCESS)
-        Status = XSpi_Start(&SpiInstance);
-    if (Status != XST_SUCCESS) {
-        xil_printf("SPI initialization failed: %d\r\n", Status);
-        exit(EXIT_FAILURE);
-    }
-    XSpi_IntrGlobalDisable(&SpiInstance);
-    initialized = 1;
+//Initialization of SPI port is already done for you
+void SPI_init() {
+
+	xil_printf("Initializing SPI\n");
+
+	ConfigPtr = XSpi_LookupConfig(XPAR_SPI_USB_DEVICE_ID);
+	if (ConfigPtr == NULL) {
+		return XST_DEVICE_NOT_FOUND;
+	}
+
+	Status = XSpi_CfgInitialize(&SpiInstance, ConfigPtr,
+				  ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf ("SPI device failed to initialize %d", Status);
+	}
+	Status = XSpi_SetOptions(&SpiInstance, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf ("SPI device failed to go into master mode %d", Status);
+	}
+
+	XSpi_Start(&SpiInstance);
+	XSpi_IntrGlobalDisable(&SpiInstance);
 }
 
 BYTE SPI_wr(BYTE data) {
