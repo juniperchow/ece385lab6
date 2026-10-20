@@ -48,9 +48,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_axi_
 # IP: bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_gpio_usb_rst_0 || ORIG_REF_NAME==mb_usb_gpio_usb_rst_0} -quiet] -quiet
 
-# IP: bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_gpio_usb_keycode_0 || ORIG_REF_NAME==mb_usb_gpio_usb_keycode_0} -quiet] -quiet
-
 # IP: bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_gpio_usb_int_0 || ORIG_REF_NAME==mb_usb_gpio_usb_int_0} -quiet] -quiet
 
@@ -62,5 +59,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_spi_
 
 # IP: bd/mb_usb/ip/mb_usb_microblaze_0_xlconcat_0/mb_usb_microblaze_0_xlconcat_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_microblaze_0_xlconcat_0 || ORIG_REF_NAME==mb_usb_microblaze_0_xlconcat_0} -quiet] -quiet
+
+# IP: bd/mb_usb/ip/mb_usb_axi_gpio_0_0/mb_usb_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_usb_axi_gpio_0_0 || ORIG_REF_NAME==mb_usb_axi_gpio_0_0} -quiet] -quiet
 
 # XDC: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/mb_usb_ooc.xdc

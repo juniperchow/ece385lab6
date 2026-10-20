@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Tue Oct 20 11:48:55 2026
+//Date        : Tue Oct 20 12:07:43 2026
 //Host        : juniper-ThinkPad-T14-Gen-5 running 64-bit Ubuntu 26.10
 //Command     : generate_target mb_usb.bd
 //Design      : mb_usb
@@ -933,13 +933,14 @@ module m06_couplers_imp_1Y6O2J1
   assign m06_couplers_to_m06_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "mb_usb,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_usb,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_usb.hwdef" *) 
+/*   */
+(* CORE_GENERATION_INFO = "mb_usb,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_usb,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_usb.hwdef" *) 
 module mb_usb
    (clk_100MHz,
     gpio_usb_int_tri_i,
     gpio_usb_int_tri_o,
     gpio_usb_int_tri_t,
-    gpio_usb_keycode_0_tri_i,
+    gpio_usb_keycode_0_tri_o,
     gpio_usb_keycode_1_tri_o,
     gpio_usb_rst_tri_o,
     reset_rtl_0,
@@ -953,8 +954,8 @@ module mb_usb
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_int TRI_I" *) input [31:0]gpio_usb_int_tri_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_int TRI_O" *) output [31:0]gpio_usb_int_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_int TRI_T" *) output [31:0]gpio_usb_int_tri_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_keycode_0 TRI_I" *) input [31:0]gpio_usb_keycode_0_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_keycode_1 TRI_O" *) output [31:0]gpio_usb_keycode_1_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_keycode_0 " *) output [31:0]gpio_usb_keycode_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_keycode_1 " *) output [31:0]gpio_usb_keycode_1_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_usb_rst TRI_O" *) output [0:0]gpio_usb_rst_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_rtl_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) input uart_rtl_0_rxd;
@@ -974,7 +975,7 @@ module mb_usb
   wire [31:0]gpio_usb_int_GPIO_TRI_T;
   wire gpio_usb_int_ip2intc_irpt;
   wire [31:0]gpio_usb_keycode_GPIO2_TRI_O;
-  wire [31:0]gpio_usb_keycode_GPIO_TRI_I;
+  wire [31:0]gpio_usb_keycode_GPIO_TRI_O;
   wire [0:0]gpio_usb_rst_GPIO_TRI_O;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
@@ -1164,8 +1165,8 @@ module mb_usb
   assign gpio_usb_int_GPIO_TRI_I = gpio_usb_int_tri_i[31:0];
   assign gpio_usb_int_tri_o[31:0] = gpio_usb_int_GPIO_TRI_O;
   assign gpio_usb_int_tri_t[31:0] = gpio_usb_int_GPIO_TRI_T;
+  assign gpio_usb_keycode_0_tri_o[31:0] = gpio_usb_keycode_GPIO_TRI_O;
   assign gpio_usb_keycode_1_tri_o[31:0] = gpio_usb_keycode_GPIO2_TRI_O;
-  assign gpio_usb_keycode_GPIO_TRI_I = gpio_usb_keycode_0_tri_i[31:0];
   assign gpio_usb_rst_tri_o[0] = gpio_usb_rst_GPIO_TRI_O;
   assign reset_rtl_0_1 = reset_rtl_0;
   assign uart_rtl_0_txd = axi_uartlite_0_UART_TxD;
@@ -1227,9 +1228,9 @@ module mb_usb
         .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
         .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID));
-  mb_usb_gpio_usb_keycode_0 gpio_usb_keycode
+  mb_usb_axi_gpio_0_0 gpio_usb_keycode
        (.gpio2_io_o(gpio_usb_keycode_GPIO2_TRI_O),
-        .gpio_io_i(gpio_usb_keycode_GPIO_TRI_I),
+        .gpio_io_o(gpio_usb_keycode_GPIO_TRI_O),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M03_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),

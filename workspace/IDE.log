@@ -1169,3 +1169,90 @@ con
 ----------------End of Script----------------
 
 14:17:19 INFO  : Disconnected from the channel tcfchan#2.
+12:09:57 DEBUG : Logs will be stored at '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/IDE.log'.
+12:09:58 INFO  : Launching XSCT server: xsct -n  -interactive /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/temp_xsdb_launch_script.tcl
+12:10:00 INFO  : Platform repository initialization has completed.
+12:10:00 INFO  : Registering command handlers for Vitis TCF services
+12:10:00 INFO  : XSCT server has started successfully.
+12:10:00 INFO  : plnx-install-location is set to ''
+12:10:00 INFO  : Successfully done setting XSCT server connection channel  
+12:10:01 INFO  : Successfully done setting workspace for the tool. 
+12:10:01 INFO  : Successfully done query RDI_DATADIR 
+12:11:51 DEBUG : Logs will be stored at '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/IDE.log'.
+12:11:51 INFO  : Launching XSCT server: xsct -n  -interactive /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/temp_xsdb_launch_script.tcl
+12:11:52 INFO  : XSCT server has started successfully.
+12:11:52 INFO  : plnx-install-location is set to ''
+12:11:52 INFO  : Successfully done setting XSCT server connection channel  
+12:11:52 INFO  : Successfully done setting workspace for the tool. 
+12:11:52 INFO  : Platform repository initialization has completed.
+12:11:52 INFO  : Successfully done query RDI_DATADIR 
+12:11:53 INFO  : Registering command handlers for Vitis TCF services
+12:12:27 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+12:12:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:12:31 INFO  : Jtag cable 'RealDigital Boo 887100000001A' is selected.
+12:12:31 INFO  : 'jtag frequency' command is executed.
+12:12:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:12:33 INFO  : Device configured successfully with "/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit"
+12:12:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:33 INFO  : Hardware design and registers information is loaded from '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+12:12:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:12:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:33 INFO  : System reset is completed.
+12:12:36 INFO  : 'after 3000' command is executed.
+12:12:36 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:36 INFO  : The application '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/Debug/helloworld_blink.elf' is downloaded to processor 'microblaze_0'.
+12:12:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/Debug/helloworld_blink.elf
+----------------End of Script----------------
+
+12:12:36 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:36 INFO  : 'con' command is executed.
+12:12:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:12:36 INFO  : Launch script is exported to file '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink_system/_ide/scripts/systemdebugger_helloworld_blink_system_standalone.tcl'
+12:14:43 INFO  : Disconnected from the channel tcfchan#1.
+12:15:12 DEBUG : Logs will be stored at '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/IDE.log'.
+12:15:13 INFO  : Launching XSCT server: xsct -n  -interactive /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/temp_xsdb_launch_script.tcl
+12:15:14 INFO  : XSCT server has started successfully.
+12:15:14 INFO  : plnx-install-location is set to ''
+12:15:14 INFO  : Successfully done setting XSCT server connection channel  
+12:15:14 INFO  : Successfully done setting workspace for the tool. 
+12:15:14 INFO  : Platform repository initialization has completed.
+12:15:14 INFO  : Successfully done query RDI_DATADIR 
+12:15:14 INFO  : Registering command handlers for Vitis TCF services
+12:17:06 INFO  : Result from executing command 'getProjects': mb_intro_top
+12:17:06 INFO  : Result from executing command 'getPlatforms': mb_intro_top|/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+12:17:09 INFO  : Checking for BSP changes to sync application flags for project 'helloworld_blink'...
+12:17:09 INFO  : Updating application flags with new BSP settings...
+12:17:09 INFO  : Successfully updated application flags for project helloworld_blink.
+12:17:11 INFO  : The hardware specification used by project 'helloworld_blink' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+12:17:11 INFO  : The file '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.mmi' stored in project is removed.
+12:17:11 INFO  : The file '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit' stored in project is removed.
+12:17:11 INFO  : The updated bitstream files are copied from platform to folder '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream' in project 'helloworld_blink'.
+12:17:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:17:21 INFO  : Jtag cable 'RealDigital Boo 887100000001A' is selected.
+12:17:21 INFO  : 'jtag frequency' command is executed.
+12:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:17:21 ERROR : couldn't open "/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit": no such file or directory
+12:17:21 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit": no such file or directory
+12:17:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:17:21 ERROR : couldn't open "/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit": no such file or directory
+12:17:34 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+12:18:07 ERROR : The platform '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm' used by the system project 'helloworld_blink_system' is not valid.

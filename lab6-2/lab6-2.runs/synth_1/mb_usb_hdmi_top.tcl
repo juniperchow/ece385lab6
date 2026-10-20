@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -122,9 +123,6 @@ set_property used_in_implementation false [get_files -all /home/juniper/Nextclou
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xdc]
-set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xdc]
@@ -134,6 +132,9 @@ set_property used_in_implementation false [get_files -all /home/juniper/Nextclou
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_gpio_0_0/mb_usb_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_gpio_0_0/mb_usb_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_gpio_0_0/mb_usb_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/mb_usb_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/lab6-2.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/data/mb_bootloop_le.elf]
 

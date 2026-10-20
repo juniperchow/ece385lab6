@@ -29,3 +29,9 @@ platform generate
 platform clean
 platform generate
 platform generate
+platform active {mb_intro_top}
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+platform generate
+platform active {mb_intro_top}
+platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6-2/mb_usb_hdmi_top.xsa}
+catch {platform remove mb_intro_top}

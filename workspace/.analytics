@@ -123,3 +123,15 @@ timestamp=[2026-10-16 14:17:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.499, d
 timestamp=[2026-10-16 14:17:11], mode=PLATFORM_GENERATION, duration=0:00:04.829, duration_ms=4829, data={name=mb_intro_top}
 timestamp=[2026-10-16 14:17:12], mode=BUILD, duration=0:00:00.860, duration_ms=860, data={name=helloworld_blink, configuration=Debug, clean_build=false}
 timestamp=[2026-10-16 14:17:13], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=helloworld_blink_system, configuration=Debug, clean_build=false}
+timestamp=[2026-10-20 12:09:59], mode=WORKBENCH_START, duration=0:00:05.468, duration_ms=5468, data={}
+timestamp=[2026-10-20 12:10:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2026-10-20 12:10:00], mode=WORKBENCH_UI_INIT, duration=0:00:00.527, duration_ms=527, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld_blink,helloworld_blink_system,mb_intro_top}
+timestamp=[2026-10-20 12:11:52], mode=WORKBENCH_START, duration=0:00:04.106, duration_ms=4106, data={}
+timestamp=[2026-10-20 12:11:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2026-10-20 12:11:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.460, duration_ms=460, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld_blink,helloworld_blink_system,mb_intro_top}
+timestamp=[2026-10-20 12:15:14], mode=WORKBENCH_START, duration=0:00:03.864, duration_ms=3864, data={}
+timestamp=[2026-10-20 12:15:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2026-10-20 12:15:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.589, duration_ms=589, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld_blink,helloworld_blink_system,mb_intro_top}
+timestamp=[2026-10-20 12:17:09], mode=PLATFORM_GENERATION, duration=0:00:05.946, duration_ms=5946, data={name=mb_intro_top}
+timestamp=[2026-10-20 12:17:10], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=helloworld_blink, configuration=Debug, clean_build=false}
+timestamp=[2026-10-20 12:17:11], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=helloworld_blink_system, configuration=Debug, clean_build=false}
