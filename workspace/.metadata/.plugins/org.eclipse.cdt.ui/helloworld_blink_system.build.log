@@ -1,6 +1,6 @@
-16:15:50 **** Incremental Build of configuration Debug for project helloworld_blink_system ****
+14:17:13 **** Build of configuration Debug for project helloworld_blink_system ****
 make all 
 Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
 
-16:15:51 Build Finished (took 229ms)
+14:17:13 Build Finished (took 221ms)
 

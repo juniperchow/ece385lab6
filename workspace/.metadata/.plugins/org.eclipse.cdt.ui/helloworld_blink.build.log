@@ -1,4 +1,4 @@
-16:15:49 **** Incremental Build of configuration Debug for project helloworld_blink ****
+14:17:11 **** Build of configuration Debug for project helloworld_blink ****
 make all 
 Building file: ../src/mb_blink.c
 Invoking: MicroBlaze gcc compiler
@@ -24,6 +24,11 @@ In file included from ../src/mb_blink.c:12:
       |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/mb_blink.c
  
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
 Building target: helloworld_blink.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "helloworld_blink.elf" ./src/mb_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -36,5 +41,5 @@ mb-size helloworld_blink.elf  |tee "helloworld_blink.elf.size"
 Finished building: helloworld_blink.elf.size
  
 
-16:15:50 Build Finished (took 481ms)
+14:17:12 Build Finished (took 838ms)
 

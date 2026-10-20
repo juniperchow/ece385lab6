@@ -28,3 +28,4 @@ platform config -updatehw {/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/lab6/mb
 platform generate
 platform clean
 platform generate
+platform generate

@@ -1113,3 +1113,59 @@ con
 16:38:25 INFO  : Registering command handlers for Vitis TCF services
 16:38:25 INFO  : Successfully done setting workspace for the tool. 
 16:38:25 INFO  : Successfully done query RDI_DATADIR 
+12:14:29 DEBUG : Logs will be stored at '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/IDE.log'.
+12:14:29 INFO  : Launching XSCT server: xsct -n  -interactive /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/temp_xsdb_launch_script.tcl
+12:14:31 INFO  : Platform repository initialization has completed.
+12:14:31 INFO  : XSCT server has started successfully.
+12:14:31 INFO  : Registering command handlers for Vitis TCF services
+12:14:31 INFO  : Successfully done setting XSCT server connection channel  
+12:14:31 INFO  : plnx-install-location is set to ''
+12:14:31 INFO  : Successfully done query RDI_DATADIR 
+12:14:31 INFO  : Successfully done setting workspace for the tool. 
+14:17:01 DEBUG : Logs will be stored at '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/IDE.log'.
+14:17:01 INFO  : Launching XSCT server: xsct -n  -interactive /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/temp_xsdb_launch_script.tcl
+14:17:03 INFO  : Platform repository initialization has completed.
+14:17:03 INFO  : Registering command handlers for Vitis TCF services
+14:17:03 INFO  : XSCT server has started successfully.
+14:17:03 INFO  : plnx-install-location is set to ''
+14:17:04 INFO  : Successfully done setting XSCT server connection channel  
+14:17:04 INFO  : Successfully done query RDI_DATADIR 
+14:17:04 INFO  : Successfully done setting workspace for the tool. 
+14:17:08 INFO  : Result from executing command 'getProjects': mb_intro_top
+14:17:08 INFO  : Result from executing command 'getPlatforms': mb_intro_top|/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+14:17:11 INFO  : Checking for BSP changes to sync application flags for project 'helloworld_blink'...
+14:17:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:14 INFO  : Jtag cable 'RealDigital Boo 887100000001A' is selected.
+14:17:14 INFO  : 'jtag frequency' command is executed.
+14:17:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:17:16 INFO  : Device configured successfully with "/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit"
+14:17:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:16 INFO  : Hardware design and registers information is loaded from '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+14:17:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:17:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:16 INFO  : System reset is completed.
+14:17:19 INFO  : 'after 3000' command is executed.
+14:17:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:19 INFO  : The application '/home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/Debug/helloworld_blink.elf' is downloaded to processor 'microblaze_0'.
+14:17:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace/helloworld_blink/Debug/helloworld_blink.elf
+----------------End of Script----------------
+
+14:17:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:17:19 INFO  : 'con' command is executed.
+14:17:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:17:19 INFO  : Disconnected from the channel tcfchan#2.
