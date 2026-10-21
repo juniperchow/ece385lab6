@@ -60,13 +60,8 @@ void printHex (u32 data, unsigned channel)
 }
 
 int main() {
-	xil_printf("console test");
     init_platform();
-    if (XGpio_Initialize(&Gpio_hex, XPAR_GPIO_USB_KEYCODE_DEVICE_ID) != XST_SUCCESS) {
-        xil_printf("Keycode GPIO initialization failed\r\n");
-        cleanup_platform();
-        return XST_FAILURE;
-    }
+    XGpio_Initialize(&Gpio_hex, XPAR_GPIO_USB_KEYCODE_DEVICE_ID);
    	XGpio_SetDataDirection(&Gpio_hex, 1, 0x00000000); //configure hex display GPIO
    	XGpio_SetDataDirection(&Gpio_hex, 2, 0x00000000); //configure hex display GPIO
 
@@ -108,10 +103,11 @@ int main() {
 					xil_printf("%x ", kbdbuf.keycode[i]);
 				}
 				//Outputs the first 4 keycodes using the USB GPIO channel 1
-				printHex((u32)kbdbuf.keycode[0] | ((u32)kbdbuf.keycode[1] << 8) |
-                         ((u32)kbdbuf.keycode[2] << 16) | ((u32)kbdbuf.keycode[3] << 24), 1);
-				//Channel 2 holds the remaining two codes; unused upper bytes stay zero.
-				printHex((u32)kbdbuf.keycode[4] | ((u32)kbdbuf.keycode[5] << 8), 2);
+				//Use unsigned 32-bit values before shifting the keycode bytes.
+				printHex((u32)kbdbuf.keycode[0] + ((u32)kbdbuf.keycode[1] << 8) +
+				         ((u32)kbdbuf.keycode[2] << 16) + ((u32)kbdbuf.keycode[3] << 24), 1);
+				//Outputs the last 2 keycodes using the USB GPIO channel 2
+				printHex((u32)kbdbuf.keycode[4] + ((u32)kbdbuf.keycode[5] << 8), 2);
 				xil_printf("\n");
 			}
 

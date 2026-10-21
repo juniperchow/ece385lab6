@@ -17727,3 +17727,1722 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-39: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 13:19:15.930
 !MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-728
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.351
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.354
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.354
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.355
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 18:43:25.356
+!MESSAGE Generating MD5 hash for file: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.356
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:25.357
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 18:43:26.602
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.222
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 18:43:32.616
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.621
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.622
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.720
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.721
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.722
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.723
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.723
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.723
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.726
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.727
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.736
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.736
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.741
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.741
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.749
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.749
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.752
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.752
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.759
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.760
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.763
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.764
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.771
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.771
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.774
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.775
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.782
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.783
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.790
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.791
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.791
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.804
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.807
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.807
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.816
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.817
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.832
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:32.833
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.091
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.105
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.132
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.133
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.138
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.138
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.139
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.139
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.146
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.147
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.148
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:34.149
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.153
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.154
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.181
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.182
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.293
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.299
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.309
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.310
+!MESSAGE XSCT Command: [con], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.314
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.315
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-261
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:43:37.318
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-261
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.303
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 18:46:10.716
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.720
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.721
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.797
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.797
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.799
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.799
+!MESSAGE XSCT Command: [version], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.799
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.799
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.802
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.803
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.810
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.810
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.813
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.813
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.820
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.820
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.823
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.823
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.829
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.829
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.832
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.832
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.839
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.839
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.841
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.841
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.848
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.848
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.856
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.857
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.857
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.868
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.871
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.878
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.878
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.890
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:10.890
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.149
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.172
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.197
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.197
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.203
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.203
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.204
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.204
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.212
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.212
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.214
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:12.214
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.218
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.218
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.244
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.245
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.355
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.361
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.369
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.370
+!MESSAGE XSCT Command: [con], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.375
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.375
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-298
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:15.378
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-298
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:44.654
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 18:46:45.044
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.049
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#8]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.049
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.128
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.128
+!MESSAGE XSCT Command: [version -server], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.129
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.129
+!MESSAGE XSCT Command: [version], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.129
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.130
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.133
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.134
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.141
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.141
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.144
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.144
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.151
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.151
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.154
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.154
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.160
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.161
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.164
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.164
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.171
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.172
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.174
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.175
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.181
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.181
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.188
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.189
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.190
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.204
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.208
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.208
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.215
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.216
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.228
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:45.229
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.488
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.497
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.522
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.522
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.528
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.528
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.529
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.530
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.537
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.537
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.539
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:46.539
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.543
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.544
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.555
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.555
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.666
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.670
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.679
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.679
+!MESSAGE XSCT Command: [con], Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.684
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-14: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.685
+!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-331
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:46:49.687
+!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-331
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.186
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.189
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.189
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.190
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 18:48:11.191
+!MESSAGE Generating MD5 hash for file: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.191
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:11.192
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 18:48:12.456
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:15.673
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 18:48:16.065
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.071
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.071
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.167
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.167
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.169
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.169
+!MESSAGE XSCT Command: [version], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.169
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.169
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.172
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.172
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.178
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.178
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.181
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.181
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.189
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.192
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.192
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.199
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.199
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.202
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.202
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.208
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.209
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.211
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.218
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.219
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.226
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.226
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.227
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.237
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.241
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.241
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.249
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.250
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.262
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:16.263
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.520
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.530
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.554
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.555
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.560
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.560
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.561
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.561
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.569
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.569
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.571
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:17.572
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.574
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.575
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.583
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.583
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.692
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.695
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.702
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.703
+!MESSAGE XSCT Command: [con], Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.707
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.707
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-374
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 18:48:20.708
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-374
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.875
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.877
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.877
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.878
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:05:01.878
+!MESSAGE Generating MD5 hash for file: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.878
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:01.879
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:05:03.171
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:05.751
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 19:05:06.127
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.131
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.132
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.227
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.228
+!MESSAGE XSCT Command: [version -server], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.230
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.230
+!MESSAGE XSCT Command: [version], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.230
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.230
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.232
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.232
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.240
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.240
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.244
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.251
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.251
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.254
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.254
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.262
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.262
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.266
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.266
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.275
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.278
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.278
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.285
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.286
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.294
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.294
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.295
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.306
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.310
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.310
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.318
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.331
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:06.332
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.590
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.601
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.629
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.630
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.636
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.636
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.637
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.638
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.647
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.648
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.650
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:07.650
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.653
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.654
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.664
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.664
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.772
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.774
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.784
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.784
+!MESSAGE XSCT Command: [con], Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.788
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-13: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.789
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-421
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:10.790
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-421
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.536
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.539
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.539
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.540
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:05:41.540
+!MESSAGE Generating MD5 hash for file: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.541
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:41.541
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:05:42.905
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:44.618
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 19:05:44.974
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:44.978
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:44.979
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.074
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.074
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.075
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.075
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.076
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.076
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.078
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.078
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.085
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.085
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.088
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.088
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.095
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.095
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.098
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.098
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.104
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.104
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.107
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.107
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.115
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.115
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.118
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.118
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.124
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.125
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.132
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.132
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.133
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.143
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.147
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.147
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.154
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.154
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.182
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:45.182
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.440
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.451
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.479
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.480
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.485
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.486
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.486
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.487
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.494
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.494
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.495
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:46.496
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.499
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.500
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.510
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.510
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.620
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.625
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.634
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.634
+!MESSAGE XSCT Command: [con], Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.639
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.640
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-469
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:05:49.642
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-469
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.028
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 19:11:11.426
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.432
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.433
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.512
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.512
+!MESSAGE XSCT Command: [version -server], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.514
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.514
+!MESSAGE XSCT Command: [version], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.514
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.518
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.518
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.526
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.526
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.529
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.529
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.536
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.536
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.539
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.539
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.545
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.546
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.548
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.549
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.555
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.556
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.558
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.558
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.565
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.566
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.573
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.573
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.574
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.587
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.591
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.591
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.598
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.599
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.612
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:11.612
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.875
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.898
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.923
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.928
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.928
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.929
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.930
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.937
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.937
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.939
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:12.939
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:15.943
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:15.944
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:15.955
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:15.955
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.063
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.068
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.093
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.094
+!MESSAGE XSCT Command: [con], Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.098
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-18: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.099
+!MESSAGE XSCT Command: [disconnect tcfchan#12], Thread: Thread-501
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:11:16.101
+!MESSAGE XSCT command with result: [disconnect tcfchan#12], Result: [null, ]. Thread: Thread-501
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.003
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.006
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.006
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.007
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:12:43.008
+!MESSAGE Generating MD5 hash for file: /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.008
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:43.009
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-20 19:12:44.129
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.160
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2026-10-20 19:12:47.552
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.561
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#13]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.562
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.659
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.659
+!MESSAGE XSCT Command: [version -server], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.661
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2.0]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.661
+!MESSAGE XSCT Command: [version], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.661
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:36
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.662
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.664
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.664
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.672
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.672
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.675
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.675
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.682
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.682
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.685
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.685
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.692
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.692
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.694
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.694
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.700
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.701
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.703
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.703
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.710
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.710
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.717
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000001A" && level == 0}], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.717
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.718
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.728
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.732
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000001A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.732
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.738
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.739
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.751
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000001A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:47.752
+!MESSAGE XSCT Command: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.010
+!MESSAGE XSCT command with result: [fpga -file /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.027
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.053
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.054
+!MESSAGE XSCT Command: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.059
+!MESSAGE XSCT command with result: [loadhw -hw /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.060
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.061
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.061
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.068
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.068
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.069
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:49.070
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.073
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.073
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.102
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.102
+!MESSAGE XSCT Command: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.210
+!MESSAGE XSCT command with result: [dow /home/juniper/Nextcloud/uofi_fa26/ece385/lab6/workspace6-2/lab62/Debug/lab62.elf], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.213
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.220
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.220
+!MESSAGE XSCT Command: [con], Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.225
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-23: Launching Debugger_lab62-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.225
+!MESSAGE XSCT Command: [disconnect tcfchan#13], Thread: Thread-551
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-20 19:12:52.227
+!MESSAGE XSCT command with result: [disconnect tcfchan#13], Result: [null, ]. Thread: Thread-551

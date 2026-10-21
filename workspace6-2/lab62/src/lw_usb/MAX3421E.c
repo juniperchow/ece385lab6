@@ -66,7 +66,7 @@ BYTE SPI_wr(BYTE data) {
 /* Functions    */
 /* Single host register write   */
 void MAXreg_wr(BYTE reg, BYTE val) {
-    BYTE tx[2] = {(BYTE)(reg | 0x02), val};
+    BYTE tx[2] = {reg + 2, val};
     int status;
 
     /* Send the command and value together so chip select stays asserted. */
@@ -82,18 +82,21 @@ void MAXreg_wr(BYTE reg, BYTE val) {
 /* multiple-byte write */
 /* returns a pointer to a memory position after last written */
 BYTE* MAXbytes_wr(BYTE reg, BYTE nbytes, BYTE* data) {
-    BYTE tx[256];
+    BYTE tx[256]; // Up to 255 data bytes plus the command byte.
     int status;
 
     if (nbytes == 0)
         return data;
 
-    tx[0] = (BYTE)(reg | 0x02);
-    memcpy(tx + 1, data, nbytes);
+    tx[0] = reg + 2;
+    /* Byte 0 is the command; the remaining bytes are the data. */
+    for (int i = 0; i < nbytes; i++) {
+        tx[i + 1] = data[i];
+    }
     status = XSpi_SetSlaveSelect(&SpiInstance, 0x01);
     if (status == XST_SUCCESS)
         status = XSpi_Transfer(&SpiInstance, tx, NULL,
-                               (unsigned int)nbytes + 1U);
+                               nbytes + 1);
     if (status != XST_SUCCESS)
         xil_printf("MAXbytes_wr SPI error: %d\r\n", status);
     XSpi_SetSlaveSelect(&SpiInstance, 0);
@@ -122,7 +125,7 @@ BYTE MAXreg_rd(BYTE reg) {
 /* multiple-bytes register read                             */
 /* returns a pointer to a memory position after last read   */
 BYTE* MAXbytes_rd(BYTE reg, BYTE nbytes, BYTE* data) {
-    BYTE buffer[256] = {0};
+    BYTE buffer[256] = {0}; // Zeros supply dummy bytes during reads.
     int status;
 
     if (nbytes == 0)
@@ -132,14 +135,18 @@ BYTE* MAXbytes_rd(BYTE reg, BYTE nbytes, BYTE* data) {
     status = XSpi_SetSlaveSelect(&SpiInstance, 0x01);
     if (status == XST_SUCCESS)
         status = XSpi_Transfer(&SpiInstance, buffer, buffer,
-                               (unsigned int)nbytes + 1U);
+                               nbytes + 1);
     XSpi_SetSlaveSelect(&SpiInstance, 0);
     if (status != XST_SUCCESS) {
         xil_printf("MAXbytes_rd SPI error: %d\r\n", status);
-        memset(data, 0, nbytes);
+        for (int i = 0; i < nbytes; i++) {
+            data[i] = 0;
+        }
     } else {
         /* Skip the byte received while sending the register address. */
-        memcpy(data, buffer + 1, nbytes);
+        for (int i = 0; i < nbytes; i++) {
+            data[i] = buffer[i + 1];
+        }
     }
     return data + nbytes;
 }
