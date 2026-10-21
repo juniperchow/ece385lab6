@@ -66,9 +66,14 @@ BYTE SPI_wr(BYTE data) {
 /* Functions    */
 /* Single host register write   */
 void MAXreg_wr(BYTE reg, BYTE val) {
+	//select MAX3421E 
+	//write reg + 2 via SPI
+	//write val via SPI
+	//read return code from SPI peripheral (see Xilinx examples) 
+	//if return code != 0 print an error
+	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
     BYTE tx[2] = {reg + 2, val};
     int status;
-
     /* Send the command and value together so chip select stays asserted. */
     status = XSpi_SetSlaveSelect(&SpiInstance, 0x01);
     if (status == XST_SUCCESS)
@@ -82,6 +87,13 @@ void MAXreg_wr(BYTE reg, BYTE val) {
 /* multiple-byte write */
 /* returns a pointer to a memory position after last written */
 BYTE* MAXbytes_wr(BYTE reg, BYTE nbytes, BYTE* data) {
+	//select MAX3421E (may not be necessary if you are using SPI peripheral)
+	//write reg + 2 via SPI
+	//write data[n] via SPI, where n goes from 0 to nbytes-1
+	//read return code from SPI peripheral 
+	//if return code != 0 print an error
+	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
+	//return (data + nbytes);
     BYTE tx[256]; // Up to 255 data bytes plus the command byte.
     int status;
 
@@ -105,6 +117,13 @@ BYTE* MAXbytes_wr(BYTE reg, BYTE nbytes, BYTE* data) {
 
 /* Single host register read        */
 BYTE MAXreg_rd(BYTE reg) {
+	//select MAX3421E (
+	//write reg via SPI
+	//read val via SPI
+	//read return code from SPI peripheral 
+	//if return code != 0 print an error
+	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
+	//return val
     BYTE buffer[2] = {reg, 0};
     int status;
 
@@ -125,6 +144,13 @@ BYTE MAXreg_rd(BYTE reg) {
 /* multiple-bytes register read                             */
 /* returns a pointer to a memory position after last read   */
 BYTE* MAXbytes_rd(BYTE reg, BYTE nbytes, BYTE* data) {
+	//select MAX3421E (may not be necessary if you are using SPI peripheral)
+	//write reg via SPI
+	//read data[n] from SPI, where n goes from 0 to nbytes-1
+	//read return code from SPI peripheral 
+	//if return code != 0 print an error
+	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
+	//return (data + nbytes);
     BYTE buffer[256] = {0}; // Zeros supply dummy bytes during reads.
     int status;
 
